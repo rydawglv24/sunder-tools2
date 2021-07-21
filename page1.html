@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a set of tools used for Sunder
+    energy during their presentation">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <title>Sunder Tools</title>
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-secondary navbar-dark ">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"><img src="sunder-banner.png" class="mx-auto" height="75px" alt="Sunder Energy Logo"/></a>
+      
+        <button 
+        class="navbar-toggler type" 
+        type="button"
+        data-bs-toggle="collapse" 
+        data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu"> 
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="page2.html" class="nav-link">Power 101</a>
+            </li>
+            <li class="nav-item">
+              <a href="page3.html" class="nav-link">What Happened?</a>
+            </li>
+            <li class="nav-item">
+              <a href="#page4" class="nav-link">Key Points</a>
+            </li>
+            <li class="nav-item">
+              <a href="page5.html" class="nav-link">Production Guarantee</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Body of Page -->
+
+    <main>
+    <!-- Q/A Form-->
+      <section class="bg-dark text-secondary text-center  p-4">
+        <div class="container">
+          <div class="container bg-dark">
+
+            <div>
+              <div><b> Are you the Homeowner? </b></div>
+                <input name="HO" type="radio" class="btn-check" id="yes1"/>
+                  <label for="yes1" class="btn btn-secondary text-dark border border-light">Yes</label>
+                <input name="HO" type="radio" class="btn-check" id="no1"/>
+                  <label for="no1" class="btn btn-secondary text-dark border border-light">No</label>
+            </div>
+            <div>
+              <div><b>How long have you lived in the home?</b></div>
+                <input name="yearsLived" type="radio" class="btn-check" id="justMovedIn"/>
+                  <label for="justMovedIn" class="btn btn-secondary text-dark border border-light">Just Moved In</label>
+                <input name="yearsLived" type="radio" class="btn-check" id="underAYear"/>
+                  <label for="underAYear" class="btn btn-secondary text-dark border border-light">Under A Year</label>
+                <input name="yearsLived" type="radio" class="btn-check" id="1Year"/>
+                  <label for="1Year" class="btn btn-secondary text-dark border border-light">1 Year</label>
+                <input name="yearsLived" type="radio" class="btn-check" id="5Years"/>
+                  <label for="5Years" class="btn btn-secondary text-dark border border-light">5 Years</label>
+                <input name="yearsLived" type="radio" class="btn-check" id="10Years"/>
+                  <label for="10Years" class="btn btn-secondary text-dark border border-light">10 Years</label>
+            </div>
+            <div>
+              <div style = "margin-bottom: 5px"><b>How is the area? Plan on moving anytime soon?</b></div>
+                <input name="moving" type="radio" class="btn-check" id="yes2"/>
+                  <label for="yes2" class="btn btn-secondary text-dark border border-light">Yes</label>
+                <input name="moving" type="radio" class="btn-check" id="no2"/>
+                  <label for="no2" class="btn btn-secondary text-dark border border-light">No</label>
+              <div><b>   If yes, How soon?(## Make this an if statement)</b></div>
+                <input name="movingSoon" type="radio" class="btn-check" id="lessThanYear"/>
+                  <label for="lessThanYear" class="btn btn-secondary text-dark border border-light">Less Than a Year</label>
+                <input name="movingSoon" type="radio" class="btn-check" id="coupleYears"/>
+                  <label for="coupleYears" class="btn btn-secondary text-dark border border-light">Couple of Years</label>
+                <input name="movingSoon" type="radio" class="btn-check" id="furtherDownRoad"/>
+                  <label for="furtherDownRoad" class="btn btn-secondary text-dark border border-light">Further Down the Road</label>
+            </div>
+            <div>
+              <div><b>Have you looked into solar?</b></div>
+                    <input name="lookedIntoSolar" type="radio" class="btn-check" id="yes3"/>
+                      <label for="yes3" class="btn btn-secondary text-dark border border-light">Yes</label>
+                    <input name="lookedIntoSolar" type="radio" class="btn-check" id="no3"/>
+                      <label for="no3" class="btn btn-secondary text-dark border border-light">No</label>
+              <div><b>If yes, How long ago(## Make condition statement)?</b></div>
+                <input type="text" placeholder="How long ago(in years)" />
+            </div>
+            <div>
+              <div><b>Why didn't you do it?(Multiple Choice)</b></div>
+                  <input name="whyNot" type="checkbox" class="btn-check" id="expensive">
+                    <label for="expensive" class="btn btn-secondary text-dark border border-light">Too Expensive</label>
+                  <input name="whyNot" type="checkbox" class="btn-check" id="company">
+                    <label for="company" class="btn btn-secondary text-dark border border-light">Company</label>
+                  <input name="whyNot" type="checkbox" class="btn-check" id="consultant">
+                    <label for="consultant" class="btn btn-secondary text-dark border border-light">Consultant</label>
+                  <input name="whyNot" type="checkbox" class="btn-check" id="Other">
+                    <label for="other" class="btn btn-secondary text-dark border border-light">Other</label>
+                  <div><input type="text" placeholder="Why?"></div>
+            </div>
+            <div >
+              <div><b>Why are you looking into it now?</b></div>
+                <input name="whyNow" type="checkbox" class="btn-check" id="green">
+                  <label for="green" class="btn btn-secondary text-dark border border-light">Go Green</label>
+                <input name="whyNow" type="checkbox" class="btn-check" id="save">
+                  <label for="save" class="btn btn-secondary text-dark border border-light">Save Money</label>
+                <input name="whyNow" type="checkbox" class="btn-check" id="homeValue">
+                  <label for="homeValue" class="btn btn-secondary text-dark border border-light">Add Value to Home</label>
+                <input name="whyNow" type="checkbox" class="btn-check" id="taxCredit">
+                  <label for="taxCredit" class="btn btn-secondary text-dark border border-light">Tax Credit</label>
+                <input name="whyNow" type="checkbox" class="btn-check" id="storage">
+                  <label for="storage" class="btn btn-secondary text-dark border border-light">Storage</label>
+                <input name="whyNow" type="checkbox" class="btn-check" id="rates">
+                  <label for="rates" class="btn btn-secondary text-dark border border-light">Lock in Rates</label>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Transition Section -->
+      <section class="bg-secondary text-dark text-center p-3">
+        <div class="container text-dark text-center border border-dark rounded-3">
+          <p>
+          <b>If there was a way where you could go solar today, save some money,
+            save the earth, with no upfront cost and without a pushy sales person
+          would that help?</b>
+          </p>
+        </div>
+      </section>
+      <section class="bg-dark text-secondary text-center p-3">  
+        <div class="container">
+          <a class="btn btn-secondary btn-lg text-dark border border-light " href="page2.html" role="button" ><b>Let's Find Out if Your Home is eligible</b></a>
+        </div>
+      </section>
+    </main>
+
+
+  </body>
+
+
+
+  </html>
